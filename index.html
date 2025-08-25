@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>酒款介紹 × 掃描紀錄</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <h1>🍷 酒款介紹 × 掃描紀錄</h1>
+  </header>
+
+  <main>
+    <section class="scanner">
+      <div class="video-wrapper">
+        <video id="video" playsinline></video>
+        <canvas id="overlay"></canvas>
+      </div>
+      <div class="controls">
+        <button id="startScan">開始掃描</button>
+        <button id="stopScan" disabled>停止掃描</button>
+        <select id="cameraSelect"></select>
+      </div>
+      <p class="hint">提示：請將 QR Code 置於取景框內。若裝置詢問權限，請允許「相機」。</p>
+      <details>
+        <summary>無法使用相機？（手動輸入）</summary>
+        <div class="manual">
+          <input id="manualInput" placeholder="貼上QR內容（例如：wine:MERLOT_2019 或 URL）" />
+          <button id="manualSubmit">顯示酒款</button>
+        </div>
+      </details>
+    </section>
+
+    <section class="result">
+      <h2>酒款介紹</h2>
+      <div id="wineInfo" class="card muted">尚未掃描</div>
+    </section>
+
+    <section class="history">
+      <h2>我的掃描紀錄</h2>
+      <div class="history-controls">
+        <button id="exportCSV">匯出CSV</button>
+        <button id="clearHistory">清空紀錄</button>
+      </div>
+      <table id="historyTable">
+        <thead>
+          <tr><th>時間</th><th>內容</th><th>酒款名稱</th><th>產區</th><th>品種</th></tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </section>
+  </main>
+
+  <footer>
+    <small>前端示範．可離線運作（需先載入頁面）。</small>
+  </footer>
+
+  <!-- ZXing QR library via CDN -->
+  <script src="https://unpkg.com/@zxing/library@0.20.0"></script>
+  <script src="app.js"></script>
+</body>
+</html>

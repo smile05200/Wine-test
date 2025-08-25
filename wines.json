@@ -1,0 +1,26 @@
+{
+  "MERLOT_2019": {
+    "name": "Merlot 2019",
+    "region": "Napa Valley, USA",
+    "variety": "Merlot",
+    "vintage": "2019",
+    "notes": "成熟黑梅、可可與淡淡香草，單寧絲滑，尾韻悠長。",
+    "url": "https://example.com/wine/MERLOT_2019"
+  },
+  "PINOT_NOIR_2021": {
+    "name": "Pinot Noir 2021",
+    "region": "Marlborough, NZ",
+    "variety": "Pinot Noir",
+    "vintage": "2021",
+    "notes": "紅櫻桃與覆盆子清爽香氣，中段帶蕈菇與森林地表氣息。",
+    "url": "https://example.com/wine/PINOT_NOIR_2021"
+  },
+  "CHARDONNAY_2020": {
+    "name": "Chardonnay 2020",
+    "region": "Burgundy, France",
+    "variety": "Chardonnay",
+    "vintage": "2020",
+    "notes": "奶油與烤榛果調性，酸度平衡，結構豐滿。",
+    "url": "https://example.com/wine/CHARDONNAY_2020"
+  }
+}
